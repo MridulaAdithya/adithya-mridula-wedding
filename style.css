@@ -2,14 +2,15 @@
 body {
   margin: 0;
   font-family: 'Noto Serif', serif;
-  background: linear-gradient(to bottom, #f8f4ff, #efe2ff);
+  background: linear-gradient(to bottom, #fff1e6, #f8e1f4);
   color: #3c1e5d;
+  text-align: justify;
 }
 
-.hero-section {
+header {
   background-image: url('assets/temple-gopuram.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   padding: 4rem 1rem 3rem;
   text-align: center;
   color: #FFD700;
@@ -17,57 +18,66 @@ body {
   position: relative;
 }
 
-.sloka-text {
-  font-size: 1.4rem;
+header p.sloka-text {
+  font-size: 1.5rem;
   font-weight: 600;
   font-style: italic;
-  margin-bottom: 1.5rem;
-  color: #fff6d6;
+  line-height: 2.2rem;
+  margin: 0 0 1.5rem 0;
   background-color: rgba(93, 58, 155, 0.6);
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
   display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
+  color: #fff8dc;
 }
 
-.intro-heading {
-  font-size: 1.8rem;
+header h1 {
+  font-size: 1.7rem;
   margin: 0.5rem 0;
   color: #FFD700;
 }
 
-.names-heading {
+header h2 {
   font-family: 'Great Vibes', cursive;
   font-size: 3.5rem;
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
   color: #FFD700;
+  text-shadow: 2px 2px 5px #000;
 }
 
 section {
-  padding: 2rem;
-  background-color: #fff9fb;
-  border-bottom: 4px solid #D4AF37;
+  padding: 2rem 1.5rem;
+  background-color: #fffef8;
+  border-bottom: 4px dashed #D4AF37;
 }
 
 .event h2 {
   color: #6A0DAD;
-  font-size: 1.8em;
-  border-bottom: 2px dashed #D4AF37;
-  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 0.3rem;
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+.event p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
 }
 
 .qr img {
   width: 160px;
   margin-top: 1rem;
-  border: 2px solid #5D3A9B;
-  border-radius: 10px;
+  border: 3px solid #6A0DAD;
+  border-radius: 12px;
 }
 
 .countdown {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #6A0DAD;
+  color: #B22222;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .gallery {
@@ -78,12 +88,20 @@ section {
   padding-top: 1rem;
 }
 
+.gallery h2 {
+  text-align: center;
+  color: #6A0DAD;
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 .gallery img {
   width: 100%;
-  max-width: 250px;
+  max-width: 260px;
   border: 5px solid #D4AF37;
-  border-radius: 12px;
-  box-shadow: 2px 2px 10px rgba(93, 58, 155, 0.3);
+  border-radius: 14px;
+  box-shadow: 3px 3px 10px rgba(93, 58, 155, 0.3);
 }
 
 footer {

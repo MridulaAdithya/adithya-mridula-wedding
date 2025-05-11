@@ -1,0 +1,57 @@
+
+body {
+  margin: 0;
+  font-family: 'Noto Serif', serif;
+  background: linear-gradient(to bottom, #fff4e6, #ffe5b4);
+  color: #4B2E1E;
+}
+header {
+  background-color: #ffcc00;
+  color: #800000;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-image: url('assets/header-floral.png');
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  margin: 0;
+}
+section {
+  padding: 2rem;
+  background-color: #fffbe6;
+  border-bottom: 5px solid #f4a460;
+}
+.event h2 {
+  color: #b22222;
+  font-size: 1.7em;
+}
+.qr img {
+  width: 150px;
+  margin-top: 1rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.gallery img {
+  width: 100%;
+  max-width: 250px;
+  border: 5px solid #DAA520;
+  border-radius: 12px;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffdbac;
+  font-size: 0.9em;
+}
+.countdown {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b22222;
+}

@@ -112,3 +112,30 @@ footer {
   font-size: 1em;
   border-top: 3px solid #D4AF37;
 }
+
+header {
+  background-color: #4b0f49;
+  background-image: url('assets/header-pattern.png'), url('assets/temple-gopuram.jpg');
+  background-size: contain, cover;
+  background-repeat: repeat-x, no-repeat;
+  background-position: top, center;
+  padding-top: 5rem;
+}
+
+.sloka-text {
+  white-space: pre-line;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2.2rem;
+}
+
+.invitation-line {
+  font-size: 1.2rem;
+  color: #fff9e5;
+  margin: 1rem auto;
+  max-width: 800px;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}

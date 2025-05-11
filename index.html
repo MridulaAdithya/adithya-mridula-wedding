@@ -1,121 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wedding Invitation - Adithya & Mridula</title>
-  <style>
-    body {
-      font-family: 'Georgia', serif;
-      background: #fff8e1;
-      color: #5d4037;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #ff7043;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .section {
-      padding: 20px;
-      text-align: center;
-    }
-    .event {
-      background-color: #ffe0b2;
-      margin: 20px;
-      padding: 20px;
-      border-radius: 12px;
-    }
-    .gallery img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 8px;
-      margin: 10px;
-    }
-    .qr {
-      margin-top: 10px;
-    }
-    .countdown {
-      font-size: 1.5em;
-      color: #d84315;
-      margin: 20px 0;
-    }
-    footer {
-      background-color: #ff7043;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adithya & Mridula's Wedding</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to the Wedding of Adithya & Mridula</h1>
-    <div class="countdown" id="countdown">Loading countdown...</div>
+    <h1>Adithya & Mridula</h1>
+    <p>Welcome to our Wedding Celebration</p>
   </header>
 
-  <section class="section">
-    <div class="event">
-      <h2>Get Together</h2>
-      <p><strong>Date:</strong> June 01, 2025</p>
-      <p><strong>Time:</strong> 6:00 PM onwards</p>
-      <p><strong>Venue:</strong> Sudharma Hall, Gopalakrishna Temple, Shakti Nagar, Mangalore - 575 016</p>
-      <img class="qr" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=Sudharma%20Hall,%20Gopalakrishna%20Temple,%20Shakti%20Nagar,%20Mangalore%20-%20575%20016" alt="QR Code for Get Together Location">
-    </div>
-
-    <div class="event">
-      <h2>Wedding</h2>
-      <p><strong>Date:</strong> June 02, 2025</p>
-      <p><strong>Muhurtha:</strong> 9:10 AM</p>
-      <p><strong>Venue:</strong> Sudharma Hall, Gopalakrishna Temple, Shakti Nagar, Mangalore - 575 016</p>
-      <img class="qr" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=Sudharma%20Hall,%20Gopalakrishna%20Temple,%20Shakti%20Nagar,%20Mangalore%20-%20575%20016" alt="QR Code for Wedding Location">
-    </div>
-
-    <div class="event">
-      <h2>Reception</h2>
-      <p><strong>Date:</strong> June 03, 2025</p>
-      <p><strong>Time:</strong> 6:30 PM onwards</p>
-      <p><strong>Venue:</strong> Palm Valley Resort, Gonikoppal, Karnataka - 571 213</p>
-      <img class="qr" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=Palm%20Valley%20Resort,%20Gonikoppal,%20Karnataka%20-%20571%20213" alt="QR Code for Reception Location">
-    </div>
+  <section class="event">
+    <h2>Get Together</h2>
+    <p>June 01, 2025<br/>6:00 pm onwards<br/>
+    Sudharma Hall, Gopalakrishna Temple, Shakti Nagar, Mangalore - 575 016</p>
+    <div class="qr"><img src="assets/get_together_qr.png" alt="Get Together Location QR"></div>
   </section>
 
-  <section class="section gallery">
+  <section class="event">
+    <h2>Wedding</h2>
+    <p>June 02, 2025<br/>Muhurtha: 9:10 am<br/>
+    Sudharma Hall, Gopalakrishna Temple, Shakti Nagar, Mangalore - 575 016</p>
+    <div class="qr"><img src="assets/wedding_qr.png" alt="Wedding Location QR"></div>
+  </section>
+
+  <section class="event">
+    <h2>Reception</h2>
+    <p>June 03, 2025<br/>6:30 pm onwards<br/>
+    Palm Valley Resort, Gonikoppal, Karnataka - 571 213</p>
+    <div class="qr"><img src="assets/reception_qr.png" alt="Reception Location QR"></div>
+  </section>
+
+  <section class="event">
+    <h2>Countdown to Wedding</h2>
+    <div class="countdown" id="countdown"></div>
+  </section>
+
+  <section class="gallery">
     <h2>Our Moments</h2>
-    <img src="https://i.ibb.co/YdHZdNq/IMG-20240413-WA0002.jpg" alt="Wedding Photo 1">
-    <img src="https://i.ibb.co/V92TcFw/IMG-20240413-WA0003.jpg" alt="Wedding Photo 2">
-    <img src="https://i.ibb.co/2Yg6hG2/IMG-20240413-WA0004.jpg" alt="Wedding Photo 3">
+    <img src="assets/photo1.jpg" alt="Adithya and Mridula 1">
+    <img src="assets/photo2.jpg" alt="Adithya and Mridula 2">
+    <img src="assets/photo3.jpg" alt="Adithya and Mridula 3">
   </section>
 
   <footer>
-    <p>We can't wait to celebrate with you!<br>No RSVP needed.</p>
+    With love, Adithya & Mridula
   </footer>
 
   <script>
     const countdownElement = document.getElementById('countdown');
-    const weddingDate = new Date('June 2, 2025 09:10:00').getTime();
-
+    const weddingDate = new Date('2025-06-02T09:10:00');
     const updateCountdown = () => {
-      const now = new Date().getTime();
-      const distance = weddingDate - now;
-
-      if (distance < 0) {
-        countdownElement.innerHTML = "It's our big day!";
+      const now = new Date();
+      const diff = weddingDate - now;
+      if (diff <= 0) {
+        countdownElement.innerHTML = "It's our wedding day!";
         return;
       }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s left for the wedding!`;
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / 1000 / 60) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+      countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
     };
-
-    updateCountdown();
     setInterval(updateCountdown, 1000);
+    updateCountdown();
   </script>
 </body>
 </html>
